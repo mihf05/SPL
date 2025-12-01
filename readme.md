@@ -1,6 +1,4 @@
-Here is the README file containing the solutions for Questions 1 and 2 from the provided exam papers.
 
-````markdown
 # CSE 1111 Mid-Term Exam Solutions (Q1 & Q2)
 
 This document contains the solved answers for Questions 1 and 2 from the provided Mid-Term exam PDF files.
@@ -339,5 +337,4 @@ else {
 
 **Final Values:** `start = 113`, `end = 125`, `count = 7`.
 
-```
 ```
