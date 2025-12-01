@@ -11,21 +11,20 @@ This document contains the solved answers for Questions 1 and 2 from the provide
 
 ### Q1 (a) Corrected Code
 ```c
-#include <stdio.h> // Corrected header
+#include <stdio.h>
 
-int main() { // Corrected main declaration
+int main() {
     int a=3, b=4, c=-5, result;
-    int Num; // 'mod' was unused
+    int Num;
     
     Num = 20 % 3;
-    a = Num + 10; // Added semicolon, corrected 1theta to 10
+    a = Num + 10;
     
-    result = a * b % c + b; // Removed space in variable name
+    result = a * b % c + b;
     printf("result = %d\n", result);
     
-    // Corrected logical AND (&&) and condition values (0 and 10)
     if (result >= 0 && result < 10) { 
-        printf("%d %d", Num, a); // Corrected format specifier (%d) and removed trailing comma
+        printf("%d %d", Num, a);
         printf("a = %d\n", a);
         return 0;
     }
@@ -50,13 +49,11 @@ result = 7
 ```c
 if (num == 1) {
     sum *= 3;
-    // Fallthrough behavior from switch
     sum += --j * 2;
     i--;
     sum = ++i * j--;
 }
 else if (num == 2) {
-    // Fallthrough behavior
     sum += --j * 2;
     i--;
     sum = ++i * j--;
@@ -116,11 +113,9 @@ else if (val == 2) {
     b = a--;
 }
 else if (val == 3) {
-    // Empty case in switch falls through to default if not broken
     printf("Inside default\n");
 }
 else if (val == 4) {
-    // Break implies do nothing
 }
 else {
     printf("Inside default\n");
@@ -186,14 +181,13 @@ if (diff == 1) {
     }
 }
 else if (diff == 2) {
-    // Break matches if logic skipping to end
 }
 else if (diff == 5) {
-    d = i++ + i; // Assuming 'i' is defined elsewhere
+    d = i++ + i;
     printf("%d", d);
 }
 else if (diff == 7) {
-    printf("%d", d); // Fallthrough from 7 to default
+    printf("%d", d);
 }
 else {
     printf("%d", d);
@@ -245,12 +239,12 @@ else {
 ```c
 if (rank == 'p') {
     bonus += 20;
-    bonus += 20; // Fallthrough
-    bonus += 20; // Fallthrough
+    bonus += 20;
+    bonus += 20;
 }
 else if (rank == 'g') {
     bonus += 20;
-    bonus += 20; // Fallthrough
+    bonus += 20;
 }
 else if (rank == 's') {
     bonus += 20;
@@ -312,18 +306,17 @@ if (sum == 1) {
         b++;
     } else if (num >= 100) {
         printf("Mahmudullah\n");
-        result *= a * c / b; // Fallthrough logic
+        result *= a * c / b;
     }
 }
 else if (sum == 2) {
     printf("Mahmudullah\n");
-    result *= a * c / b; // Fallthrough logic
+    result *= a * c / b;
 }
 else if (sum == 3) {
     result *= a * c / b;
 }
 else if (sum == 4) {
-    // Break
 }
 else {
     result -= 5;
